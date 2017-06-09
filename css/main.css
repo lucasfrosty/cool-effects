@@ -8,17 +8,36 @@
 .pull-left {
   float: left; }
 
+body {
+  font-family: 'Raleway', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.daora {
+  font-weight: 900;
+  color: #222; }
+
 .navbar {
+  display: block;
   top: 0;
   left: 0;
-  width: 100%;
-  display: block; }
+  margin: 0 80px; }
   .navbar:after {
     content: "";
     display: table;
     clear: both; }
   .navbar .navbar__brand {
     padding: 15px; }
+    .navbar .navbar__brand--right {
+      float: right; }
+      .navbar .navbar__brand--right ul > li {
+        margin-right: 30px; }
+    .navbar .navbar__brand--left {
+      float: left; }
+      .navbar .navbar__brand--left ul > li {
+        margin-left: 30px; }
   .navbar .navbar__itens {
     padding: 15px; }
     .navbar .navbar__itens ul {
@@ -27,6 +46,16 @@
       .navbar .navbar__itens ul li {
         display: inline;
         list-style-type: none; }
+        .navbar .navbar__itens ul li a:hover {
+          border-bottom: 1px solid #fff; }
+    .navbar .navbar__itens--right {
+      float: right; }
+      .navbar .navbar__itens--right ul > li {
+        margin-right: 30px; }
+    .navbar .navbar__itens--left {
+      float: left; }
+      .navbar .navbar__itens--left ul > li {
+        margin-left: 30px; }
 
 .footer {
   position: absolute;
@@ -128,7 +157,6 @@ body {
 
 body {
   height: 100vh;
-  font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;

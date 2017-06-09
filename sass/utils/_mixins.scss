@@ -5,3 +5,16 @@
     clear: both;
   }
 }
+
+
+@mixin --left_and_right {
+  &--right {
+    float: right;
+    ul>li { margin-right: 30px }
+  }
+
+  &--left {
+    float: left;
+    ul>li { margin-left: 30px }
+  }
+}

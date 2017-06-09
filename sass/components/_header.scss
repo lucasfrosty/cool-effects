@@ -2,15 +2,14 @@
 .navbar {
   @include clearfix;
 
-
   // navbar properties
+  display: block;
   top: 0;
   left: 0;
-  width: 100%;
-  display: block;
+  margin: 0 80px;
 
 
-  .navbar__brand { padding: $navbar-padding; }
+  .navbar__brand { padding: $navbar-padding; @include --left_and_right; }
 
 
   .navbar__itens {
@@ -21,9 +20,18 @@
       li {
         display: inline;
         list-style-type: none;
+
+        a:hover {
+          border-bottom: 1px solid #fff;
+        }
       }
     }
+
+    @include --left_and_right;
+
   }
+
+
 
 
 }
