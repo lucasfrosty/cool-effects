@@ -9,49 +9,9 @@ body {
   line-height: 20em;
 
   a {
-    position: relative;
-
-    // button effect
-    &.main__button-effect {
-      background-color: $color3;
-      border: 0;
-      border-bottom: 3px solid darken($color3, 15%);
-      color: inherit;
-      padding: 10px;
-      font-family: inherit;
-      transition: 0.5s ease;
-      &:hover {
-        background-color: darken($color3, 15%);
-      }
-    }
-
-
-
-
-
-    // hover effect
-    &.main__hover-effect {
-      padding: 4px 0;
-
-
-      &::after {
-        position: absolute;
-      	top: 100%;
-      	left: 0;
-      	width: 100%;
-      	height: 2px;
-      	background: rgba(0, 0, 0, 0.1);
-      	content: '';
-      	opacity: 0;
-      	transition: opacity 0.3s, transform 0.3s;
-      	transform: translateY(10px);
-      }
-
-      &:hover::after {
-        opacity: 1;
-        transform: translateY(0px);
-      }
-
-    }
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }

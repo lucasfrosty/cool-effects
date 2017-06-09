@@ -1,0 +1,16 @@
+// button effect
+.main__button-effect {
+  background-color: $color3;
+  border: 0;
+  box-shadow: 0 6px darken($color3, 15%);
+  color: inherit;
+  padding: 10px;
+  font-family: inherit;
+  padding: 15px;
+  border-radius: 5px 5px 5px 5px;
+
+  &:hover {
+    box-shadow: 0 4px darken($color3, 15%);
+    top: 2px;
+  }
+}

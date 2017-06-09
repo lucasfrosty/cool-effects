@@ -9,7 +9,12 @@
   margin: 0 80px;
 
 
-  .navbar__brand { padding: $navbar-padding; @include --left_and_right; }
+  .navbar__brand {
+    padding: $navbar-padding;
+    @include --left_and_right;
+    letter-spacing: 0.7px;
+  }
+  .navbar__brand--center { font-size: 30px; text-align: center; }
 
 
   .navbar__itens {
