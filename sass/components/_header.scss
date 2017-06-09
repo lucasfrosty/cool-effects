@@ -1,16 +1,40 @@
-.nav {
+.navbar {
+
+  // clearfix
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+
+
+
+
+  // navbar properties
   top: 0;
   left: 0;
   width: 100%;
   display: block;
 
+
   .navbar__brand {
-    width: 40px;
-    padding: 15px;
+    padding: $navbar-padding;
   }
 
-  .navbar__itens>ul>li {
-    display: inline;
-    list-style-type: none;
+
+  .navbar__itens {
+    padding: $navbar-padding;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline;
+        list-style-type: none;
+      }
+    }
   }
+
+
 }

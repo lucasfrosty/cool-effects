@@ -8,17 +8,26 @@
 .pull-left {
   float: left; }
 
-.nav {
+.navbar {
   top: 0;
   left: 0;
   width: 100%;
   display: block; }
-  .nav .navbar__brand {
-    width: 40px;
+  .navbar:before, .navbar:after {
+    content: " ";
+    display: table; }
+  .navbar:after {
+    clear: both; }
+  .navbar .navbar__brand {
     padding: 15px; }
-  .nav .navbar__itens > ul > li {
-    display: inline;
-    list-style-type: none; }
+  .navbar .navbar__itens {
+    padding: 15px; }
+    .navbar .navbar__itens ul {
+      margin: 0;
+      padding: 0; }
+      .navbar .navbar__itens ul li {
+        display: inline;
+        list-style-type: none; }
 
 .footer {
   position: absolute;
