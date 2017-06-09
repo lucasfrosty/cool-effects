@@ -1,12 +1,12 @@
 body {
-  background: linear-gradient($color1, darken($color1, 10%));
+  @include gradient-bg-color($color1);
   color: white;
 }
 
 .main {
+  box-sizing: border-box;
   text-align: center;
   margin-top: 20px;
-  line-height: 20em;
 
   a {
     font-size: 13px;

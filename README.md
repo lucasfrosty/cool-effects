@@ -1,4 +1,4 @@
-# efeitosdaora
+# d.efeitos
 Site that shows cool css/js effects.
 
 

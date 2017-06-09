@@ -18,3 +18,11 @@
     ul>li { margin-left: 30px }
   }
 }
+
+
+@mixin gradient-bg-color($color) {
+  background: -webkit-linear-gradient($color, darken($color, 10%));
+  background: -o-linear-gradient($color, darken($color, 10%));
+  background: linear-gradient($color, darken($color, 10%));
+  background-repeat: no-repeat;
+}
