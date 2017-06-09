@@ -2,17 +2,18 @@
 .row,
 .col {
   box-sizing: border-box;
+  @include clearfix;
 }
 
-.row:before,
-.row:after {
-  content: " ";
-  display: table;
-}
-
-.row:after {
-  clear: both;
-}
+// .row:before,
+// .row:after {
+//   content: " ";
+//   display: table;
+// }
+//
+// .row:after {
+//   clear: both;
+// }
 
 .col {
   position: relative;

@@ -13,10 +13,9 @@
   left: 0;
   width: 100%;
   display: block; }
-  .navbar:before, .navbar:after {
-    content: " ";
-    display: table; }
   .navbar:after {
+    content: "";
+    display: table;
     clear: both; }
   .navbar .navbar__brand {
     padding: 15px; }
@@ -50,14 +49,11 @@ body {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box; }
-
-.row:before,
-.row:after {
-  content: " ";
-  display: table; }
-
-.row:after {
-  clear: both; }
+  .row:after,
+  .col:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .col {
   position: relative;
