@@ -1,10 +1,9 @@
 // hover effect
-.main {
+.navbar {
   a {
     position: relative;
-    &.main__hover-effect {
+    &.navbar__link-effect {
       padding: 4px 0;
-
 
       &::after {
         position: absolute;
@@ -12,7 +11,7 @@
         left: 0;
         width: 100%;
         height: 2px;
-        background: rgba(0, 0, 0, 0.1);
+        background: rgba(0, 0, 0, 0.2);
         content: '';
         opacity: 0;
         transition: opacity 0.3s, transform 0.3s;

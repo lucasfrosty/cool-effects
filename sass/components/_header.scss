@@ -2,37 +2,43 @@
 .navbar {
 
   // navbar properties
+  @include clearfix;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.09), 0 1px 0 0 rgba(0, 0, 0, 0.07);
   display: block;
   top: 0;
   left: 0;
-  margin: 0 80px;
+  padding: 0 20px;
 
 
   .navbar__brand {
     padding: $navbar-padding;
     @include --left_and_right;
     letter-spacing: 0.7px;
+    font-size: $brand_font_size;
   }
-  .navbar__brand--center { font-size: 30px; text-align: center; }
 
 
   .navbar__itens {
+    @include --left_and_right;
+    line-height: 27px;
     padding: $navbar-padding;
     ul {
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+      text-transform: uppercase;
       margin: 0;
       padding: 0;
       li {
         display: inline;
         list-style-type: none;
-
-        a:hover {
-          border-bottom: 1px solid #fff;
-        }
       }
     }
 
-    @include --left_and_right;
+  }
 
+  .active {
+    color: rgba(0, 0, 0, 0.4);
   }
 
 

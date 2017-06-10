@@ -1,17 +1,33 @@
-body {
-  @include gradient-bg-color($color1);
-  color: white;
-}
-
 .main {
   box-sizing: border-box;
   text-align: center;
-  margin-top: 20px;
+
+  p {
+    font-family: 'Fira Sans', sans-serif;
+  }
 
   a {
     font-size: 13px;
     letter-spacing: 1.3px;
     font-weight: bold;
     text-transform: uppercase;
+  }
+
+  .main__title {
+    letter-spacing: 1px;
+    padding-top: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 27px;
+  }
+
+  .main__content {
+  }
+
+
+  .main__box {
+    background-color: $color1;
+    padding-top: 25px;
+    height: 50px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
 }

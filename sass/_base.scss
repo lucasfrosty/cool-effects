@@ -1,13 +1,14 @@
-@-ms-viewport   { width: device-width; }
-@-o-viewport    { width: device-width; }
-@viewport       { width: device-width; }
-
-html {
+html, body {
   height: 100%;
 }
 
 body {
-  height: 100%;
+  @include gradient-bg-color($color1);
+  color: white;
   margin: 0;
   padding: 0;
+}
+
+section {
+  margin-top: 70px;
 }
