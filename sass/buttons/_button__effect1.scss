@@ -1,0 +1,15 @@
+/* --------------------------------
+********** BUTTON EFFECT #1 **********
+TODO: possibly inheritance from button superclass
+-------------------------------- */
+.button__effect--1 {
+  background-color: $color3;
+  box-shadow: 0 6px darken($color3, 15%);
+  border-radius: 5px 5px 5px 5px;
+  transition: 0s;
+
+  &:hover {
+    box-shadow: 0 4px darken($color3, 15%);
+    top: 2px;
+  }
+}
