@@ -9,7 +9,7 @@ body {
 }
 
 body.index {  @include gradient-bg-color($color1); }
-body.buttons {  @include gradient-bg-color(#535474); }
+body.buttons {  @include gradient-bg-color($color2); }
 body.links {  @include gradient-bg-color(#432C51); }
 body.images {  @include gradient-bg-color(#E8AA8C); }
 

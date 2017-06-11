@@ -1,15 +1,27 @@
-/* --------------------------------
-********** BUTTON EFFECT #1 **********
-TODO: possibly inheritance from button superclass
--------------------------------- */
+/********** BUTTON EFFECT #1 **********
+* IMPORTANT: Use the button together with this class: <button class="button button__effect--1">
+  The button class code is on the '_button.scss' file on this folder.
+* IMPORTANT2: If you want this effect to come from the left to the right
+  just use the commented code instead.
+* IMPORTANT3: Replace the '$color3' and '$color2' with that you want on the button.
+***************************************/
 .button__effect--1 {
-  background-color: $color3;
-  box-shadow: 0 6px darken($color3, 15%);
-  border-radius: 5px 5px 5px 5px;
-  transition: 0s;
+  border: 3px solid $color3;
+  color: $color3;
 
-  &:hover {
-    box-shadow: 0 4px darken($color3, 15%);
-    top: 2px;
+  &::after {
+    width: 100%; // width: 0;
+    height: 0; // height: 100%;
+    top: 0;
+    left: 0;
+    background: $color3;
+  }
+
+  &:hover, &:active {
+    color: $color2;
+
+    &::after {
+      height: 100%; // width: 100%;
+    }
   }
 }

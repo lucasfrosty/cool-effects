@@ -1,27 +1,40 @@
 /********** BUTTON EFFECT #2 **********
 * IMPORTANT: Use the button together with this class: <button class="button button__effect--2">
-  The button class code is on the _button file on this same folder.
+  The button class code is on the '_button.scss' file on this folder.
 * IMPORTANT2: If you want this effect to come from the left to the right
   just use the commented code instead.
-* IMPORTANT3: Replace the '$color3' with the color from your preference.
+* IMPORTANT3: Replace the '$color3' and '$color2' with that you want on the button.
 ***************************************/
 .button__effect--2 {
   border: 3px solid $color3;
   color: $color3;
+  overflow: hidden;
 
   &::after {
-    width: 100%; // width: 0;
-    height: 0; // height: 100%;
-    top: 0;
-    left: 0;
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
     background: $color3;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
   }
 
   &:hover, &:active {
-    color: white;
-
-    &::after {
-      height: 100%; // width: 100%;
-    }
+    color: $color2;
   }
+
+  &:hover::after {
+    height: 200%; // if you change the size of the button, this attribute need to change as well.
+    opacity: 1;
+  }
+
+  &:active::after {
+    height: 400%;
+    opacity: 1;
+  }
+
 }
