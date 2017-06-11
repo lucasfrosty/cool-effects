@@ -124,81 +124,6 @@ a {
        -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
-/* Pseudo elements for icons */
-.button:before,
-.icon__heart:after,
-.icon__star:after,
-.icon__plus:after,
-.icon__file:before {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  position: relative;
-  -webkit-font-smoothing: antialiased; }
-
-.icon__envelope:before {
-  content: "\e000"; }
-
-.icon__cart:before {
-  content: "\e007"; }
-
-.icon__cart--2:before {
-  content: "\e008"; }
-
-.icon__heart:before {
-  content: "\e009"; }
-
-/* Filled heart */
-.icon__heart:after,
-.icon__heart--2:before {
-  content: "\e00a"; }
-
-.icon__star:before {
-  content: "\e00b"; }
-
-/* Filled star */
-.icon__star:after,
-.icon__star--2:before {
-  content: "\e00c"; }
-
-.icon__arrow--right:before {
-  content: "\e00d"; }
-
-.icon__arrow--left:before {
-  content: "\e003"; }
-
-.icon__truck:before {
-  content: "\e00e"; }
-
-.icon__remove:before {
-  content: "\e00f"; }
-
-.icon__cog:before {
-  content: "\e010"; }
-
-.icon__plus:before,
-.icon__plus:after {
-  content: "\e011"; }
-
-.icon__minus:before {
-  content: "\e012"; }
-
-.icon__file:before {
-  content: "\e004"; }
-
-.icon__remove--2:before {
-  content: "\e005"; }
-
-.bh-icon-smiley:before {
-  content: "\e001"; }
-
-.bh-icon-sad:before {
-  content: "\e002"; }
-
 .button {
   position: relative;
   border: none;
@@ -345,6 +270,29 @@ a {
        -moz-box-shadow: 0 0 #71C9CE;
             box-shadow: 0 0 #71C9CE;
     top: 6px; }
+
+/********** BUTTON EFFECT #5 **********
+* IMPORTANT: Use the button together with this class: <button class="button button__effect--5">
+  The button class code is on the '_button.scss' file on this folder.
+* IMPORTANT2: For the buttons with icons, use it with the correspondent icon class of the
+  '_icons.scss' file.
+* IMPORTANT3: If you want this effect to come from the left to the right
+  just use the commented code instead.
+* IMPORTANT4: Replace the '$color3' and '$color2' with that you want on the button.
+***************************************/
+.button__effect--5 {
+  background-color: #71C9CE;
+  padding: 25px 60px 25px 120px;
+  margin: 15px 30px; }
+  .button__effect--5::before {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px; }
 
 .navbar a {
   position: relative; }
