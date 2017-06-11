@@ -6,11 +6,15 @@
     font-family: 'Fira Sans', sans-serif;
   }
 
-  a {
-    font-size: 13px;
+  a.index__link {
+    color: white;
     letter-spacing: 1.3px;
-    font-weight: bold;
-    text-transform: uppercase;
+    border-bottom: 2px dotted white;
+    transition: 0.5s ease;
+    &:hover {
+      border-bottom-color: rgba(0, 0, 0, 0.7);
+      color: rgba(0, 0, 0, 0.7);
+    }
   }
 
   .main__title {
