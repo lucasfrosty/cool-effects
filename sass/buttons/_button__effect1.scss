@@ -8,6 +8,7 @@
 .button__effect--1 {
   border: 3px solid $color3;
   color: $color3;
+  transition: all 0.3s;
 
   &::after {
     width: 100%; // width: 0;

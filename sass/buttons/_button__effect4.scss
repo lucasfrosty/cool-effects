@@ -1,15 +1,15 @@
-/********** BUTTON EFFECT #3 **********
-* IMPORTANT: Use the button together with this class: <button class="button button__effect--3">
+/********** BUTTON EFFECT #4 **********
+* IMPORTANT: Use the button together with this class: <button class="button button__effect--4">
   The button class code is on the '_button.scss' file on this folder.
 * IMPORTANT2: If you want this effect to come from the left to the right
   just use the commented code instead.
 * IMPORTANT3: Replace the '$color3' and '$color2' with that you want on the button.
 ***************************************/
-.button__effect--3 {
+.button__effect--4 {
+  border-radius: 40px;
   background-color: $color3;
-  box-shadow: 0 6px darken($color3, 15%);
-  border-radius: 5px 5px 5px 5px;
   color: $color2;
+  box-shadow: 0 6px darken($color3, 15%);
 
   &:hover {
     box-shadow: 0 4px darken($color3, 15%);

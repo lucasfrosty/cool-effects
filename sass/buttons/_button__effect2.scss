@@ -9,6 +9,7 @@
   border: 3px solid $color3;
   color: $color3;
   overflow: hidden;
+  transition: all 0.3s;
 
   &::after {
     width: 100%;
