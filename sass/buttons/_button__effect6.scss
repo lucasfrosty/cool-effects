@@ -1,5 +1,5 @@
-/********** BUTTON EFFECT #5 **********
-* IMPORTANT: Use the button together with this class: <button class="button button__effect--5">
+/********** BUTTON EFFECT #6 **********
+* IMPORTANT: Use the button together with this class: <button class="button button__effect--6">
   The button class code is on the '_button.scss' file on this folder.
 * IMPORTANT2: You need to download the 'fonts/' folder and get the
   'utils/_icons.scss' on this repository the get the arrow icon.
@@ -8,8 +8,8 @@
 * IMPORTANT4: Replace the '$color3' and '$color2' with that you want on the button.
 ***************************************/
 
-.button__effect--5 {
-  position: relative;
+.button__effect--6 {
+  // position: relative;
   border-radius: 50px;
 	border: 3px solid $color3;
   padding: 25px 60px;
@@ -22,7 +22,7 @@
   }
 
   &::before {
-    left: 70%;
+    left: 30%;
   	opacity: 0;
     top: 35%; // in case you change the size of the button, this propertie need to change as well.
     position: absolute;
@@ -36,7 +36,7 @@
   }
 
   &:hover::before {
-    left: 80%;
+    left: 10%;
   	opacity: 1;
   }
 

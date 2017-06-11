@@ -1,0 +1,65 @@
+/********** BUTTON EFFECT #7 **********
+* IMPORTANT: Use the button together with this class: <button class="button button__effect--7">
+  The button class code is on the '_button.scss' file on this folder.
+* IMPORTANT2: You need to download the 'fonts/' folder and get the
+  'utils/_icons.scss' on this repository the get the arrow icon.
+* IMPORTANT3: If you want this effect to come from the left to the right
+  just use the commented code instead.
+* IMPORTANT4: Replace the '$color3' and '$color2' with that you want on the button.
+***************************************/
+
+.button__effect--7 {
+  background-color: darken($color2, 20%);
+  color: #fff;
+  height: 70px;
+  width: 180px;
+  line-height: 24px;
+  font-size: 16px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  &:active {
+    background: darken($color2, 13%);
+    top: 2px;
+  }
+
+  span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    -moz-transition: all 0.3s;
+    -moz-backface-visibility: hidden;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+
+  &::before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 2.5;
+    font-size: 180%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    left: 0;
+    top: -100%;
+  }
+
+  &:hover {
+    span {
+      -webkit-transform: translateY(300%);
+      -moz-transform: translateY(300%);
+      -ms-transform: translateY(300%);
+      transform: translateY(300%);
+    }
+
+    &::before {
+      top: 30%; // if you change the size button, this attribute need to change as well
+    }
+  }
+}
