@@ -80,10 +80,10 @@ a {
   font-weight: 900;
   color: #D0F9B1; }
   .efeitos:hover {
-    -webkit-transition: 2.5s;
-    -o-transition: 2.5s;
-    -moz-transition: 2.5s;
-    transition: 2.5s;
+    -webkit-transition: 1.2s;
+    -o-transition: 1.2s;
+    -moz-transition: 1.2s;
+    transition: 1.2s;
     color: #44632c; }
 
 body.buttons {
@@ -552,6 +552,60 @@ body.index {
        transform: translatex(300%); }
   .button__effect--8:hover::before {
     left: 0; }
+
+.link {
+  position: relative;
+  display: inline-block;
+  margin: 15px 25px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  font-size: 20px; }
+
+/********** BUTTON EFFECT #1 **********
+* IMPORTANT: Use the button together with this class: <a class="link link__effect--1">
+  The link class code is on the '_link.scss' file on this folder.
+***************************************/
+.link__effect--1::after, .link__effect--1::before {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.3s;
+  transition: opacity 0.2s, -webkit-transform 0.3s;
+  -o-transition: opacity 0.2s, -o-transform 0.3s;
+  -moz-transition: transform 0.3s, opacity 0.2s, -moz-transform 0.3s;
+  transition: transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s; }
+
+.link__effect--1::before {
+  margin-right: 10px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+   -o-transform: translateX(20px);
+      transform: translateX(20px); }
+
+.link__effect--1::after {
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+   -o-transform: translateX(-20px);
+      transform: translateX(-20px); }
+
+.link__effect--1:hover::before, .link__effect--1:hover::after, .link__effect--1:focus::before, .link__effect--1:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+   -o-transform: translateX(0px);
+      transform: translateX(0px); }
 
 .navbar a {
   position: relative; }
