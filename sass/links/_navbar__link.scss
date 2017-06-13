@@ -1,28 +1,24 @@
 // hover effect
-.navbar {
-  a {
-    position: relative;
-    &.navbar__link-effect {
-      padding: 4px 0;
+.link__effect--3 {
+  position: relative;
+  padding: 4px 0;
 
-      &::after {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: rgba(255, 255, 255, 0.5);
-        content: '';
-        opacity: 0;
-        transition: opacity 0.3s, transform 0.3s;
-        transform: translateY(10px);
-      }
-
-      &:hover::after {
-        opacity: 1;
-        transform: translateY(0px);
-      }
-
-    }
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    content: '';
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(10px);
   }
+
+  &:hover::after {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
 }
