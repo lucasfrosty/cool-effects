@@ -160,6 +160,8 @@ body.images {
       .navbar .navbar__itens ul li {
         display: inline;
         list-style-type: none; }
+        .navbar .navbar__itens ul li a.link__effect--2 {
+          padding-bottom: 4px; }
   .navbar .active {
     color: rgba(0, 0, 0, 0.4); }
 
@@ -613,8 +615,7 @@ body.index {
   The link class code is on the '_link.scss' file on this folder.
 ***************************************/
 .link__effect--2 {
-  position: relative;
-  padding: 4px 0; }
+  position: relative; }
   .link__effect--2::after {
     position: absolute;
     top: 100%;
