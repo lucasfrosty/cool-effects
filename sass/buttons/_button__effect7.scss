@@ -11,6 +11,7 @@
 .button__effect--7 {
   background-color: darken($color2, 20%);
   color: #fff;
+  border-radius: 10px;
   height: 70px;
   width: 180px;
   line-height: 24px;
@@ -22,6 +23,7 @@
 
   &:active {
     background: darken($color2, 13%);
+    color: $color2;
     top: 2px;
   }
 

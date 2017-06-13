@@ -431,6 +431,9 @@ a {
 .button__effect--7 {
   background-color: #282939;
   color: #fff;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   height: 70px;
   width: 180px;
   line-height: 24px;
@@ -441,6 +444,7 @@ a {
   backface-visibility: hidden; }
   .button__effect--7:active {
     background: #37384d;
+    color: #535474;
     top: 2px; }
   .button__effect--7 span {
     display: inline-block;
@@ -485,6 +489,9 @@ a {
 .button__effect--8 {
   background-color: #282939;
   color: #fff;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   height: 70px;
   width: 180px;
   line-height: 24px;
@@ -495,6 +502,7 @@ a {
   backface-visibility: hidden; }
   .button__effect--8:active {
     background: #37384d;
+    color: #535474;
     top: 2px; }
   .button__effect--8 span {
     display: inline-block;
