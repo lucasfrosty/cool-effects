@@ -866,8 +866,8 @@ body.index {
 ***************************************/
 .link__effect--7 {
   padding: 0;
-  border-top: 2px solid #0972b4;
-  color: #0972b4;
+  border-top: 2px solid #686a92;
+  color: #686a92;
   text-shadow: none; }
   .link__effect--7::before {
     padding: 0;
@@ -885,6 +885,59 @@ body.index {
     transition: max-width 0.5s; }
   .link__effect--7:hover::before, .link__effect--7:focus::before {
     max-width: 100%; }
+
+/********** BUTTON EFFECT #8 **********
+* IMPORTANT: Use the button together with this class: <a class="link link__effect--8">
+  The link class code is on the '_link.scss' file on this folder.
+* IMPORTANT2: In this specific case, the HTML need to be passed as:
+  <a href="#" class="link link__effect--8" data-hover="your data"><span>your data</span></a>
+***************************************/
+.link__effect--8 {
+  overflow: hidden;
+  margin: 15px;
+  position: relative;
+  z-index: 1; }
+  .link__effect--8::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #333447;
+    content: attr(data-hover);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: -o-transform 0.3s;
+    -moz-transition: transform 0.3s, -moz-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s;
+    -webkit-transform: translateX(-25%); }
+  .link__effect--8 span {
+    display: block;
+    padding: 0px 20px;
+    background: #3e3e56;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: -o-transform 0.3s;
+    -moz-transition: transform 0.3s, -moz-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s; }
+  .link__effect--8:hover span, .link__effect--8:focus span {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+     -o-transform: translateX(100%);
+        transform: translateX(100%); }
+  .link__effect--8:hover::before, .link__effect--8:focus::before {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+     -o-transform: translateX(0%);
+        transform: translateX(0%); }
 
 /*--------- Grid System ---------*/
 .row,

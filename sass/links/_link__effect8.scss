@@ -1,0 +1,52 @@
+/********** BUTTON EFFECT #8 **********
+* IMPORTANT: Use the button together with this class: <a class="link link__effect--8">
+  The link class code is on the '_link.scss' file on this folder.
+* IMPORTANT2: In this specific case, the HTML need to be passed as:
+  <a href="#" class="link link__effect--8" data-hover="your data"><span>your data</span></a>
+***************************************/
+.link__effect--8 {
+  overflow: hidden;
+	margin: 15px;
+	position: relative;
+	z-index: 1;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: darken($color2, 15%);
+    content: attr(data-hover);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform: translateX(-25%);
+  }
+
+  span {
+    display: block;
+    padding: 0px 20px;
+    background: darken($color2, 10%);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+
+  &:hover, &:focus {
+    span {
+      -webkit-transform: translateX(100%);
+	    -moz-transform: translateX(100%);
+	    transform: translateX(100%);
+    }
+
+    &::before {
+      -webkit-transform: translateX(0%);
+      -moz-transform: translateX(0%);
+	    transform: translateX(0%);
+    }
+  }
+}
