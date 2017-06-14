@@ -556,6 +556,7 @@ body.index {
     left: 0; }
 
 .link {
+  cursor: pointer;
   position: relative;
   display: inline-block;
   margin: 15px 25px;
