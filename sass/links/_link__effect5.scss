@@ -1,0 +1,32 @@
+/********** BUTTON EFFECT #5 **********
+* IMPORTANT: Use the button together with this class: <a class="link link__effect--5">
+  The link class code is on the '_link.scss' file on this folder.
+***************************************/
+
+.link__effect--5 {
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: 0.3s;
+
+  &:hover, &focus {
+    color: darken($color2, 5%);
+
+    &::before {
+      color: #fff;
+      text-shadow: 10px 0 #fff, -10px 0 #fff;
+    }
+  }
+  
+  &::before {
+    position: absolute;
+    top: 70%; // this usually is used as top: 100%, but i had to use -100% because of the code link icon below the effect
+    left: 50%;
+    color: transparent;
+    content: "•";
+    text-shadow: transparent 0px 0px;
+    font-size: 1.2em;
+    transform: translateX(-50%);
+    pointer-events: none;
+    transition: text-shadow 0.3s, color 0.3s;
+  }
+}
