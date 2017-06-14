@@ -772,6 +772,11 @@ body.index {
 /********** BUTTON EFFECT #6 **********
 * IMPORTANT: Use the button together with this class: <a class="link link__effect--6">
   The link class code is on the '_link.scss' file on this folder.
+* IMPORTANT2: In this specific case, the HTML need to be passed as:
+  <a href="#" class="link link__effect--6">
+    <span>EFFECT 6</span>
+    <span>Look how cool is it</span>
+  </a>
 ***************************************/
 .link__effect--6 {
   margin: 0 20px;
