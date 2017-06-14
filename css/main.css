@@ -568,7 +568,10 @@ body.index {
   letter-spacing: 1px;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
   font-size: 20px;
-  line-height: 44px; }
+  line-height: 44px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
 
 /********** BUTTON EFFECT #1 **********
 * IMPORTANT: Use the button together with this class: <a class="link link__effect--1">
@@ -854,6 +857,34 @@ body.index {
     -ms-transform: translateY(-100%);
      -o-transform: translateY(-100%);
         transform: translateY(-100%); }
+
+/********** BUTTON EFFECT #7 **********
+* IMPORTANT: Use the button together with this class: <a class="link link__effect--7">
+  The link class code is on the '_link.scss' file on this folder.
+* IMPORTANT2: In this specific case, the HTML need to be passed as:
+  <a href="#" class="link link__effect--7" data-hover="your data">your data</a>
+***************************************/
+.link__effect--7 {
+  padding: 0;
+  border-top: 2px solid #0972b4;
+  color: #0972b4;
+  text-shadow: none; }
+  .link__effect--7::before {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    max-width: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    content: attr(data-hover);
+    -webkit-transition: max-width 0.5s;
+    -moz-transition: max-width 0.5s;
+    -o-transition: max-width 0.5s;
+    transition: max-width 0.5s; }
+  .link__effect--7:hover::before, .link__effect--7:focus::before {
+    max-width: 100%; }
 
 /*--------- Grid System ---------*/
 .row,
