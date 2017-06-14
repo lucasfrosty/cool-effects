@@ -691,7 +691,7 @@ body.index {
     position: relative;
     display: inline-block;
     padding: 0 30px;
-    background: #2195de;
+    background: #3e3e56;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: -webkit-transform 0.3s;
@@ -713,7 +713,7 @@ body.index {
       left: 0;
       width: 100%;
       height: 100%;
-      background: #0965a0;
+      background: #3e3e56;
       content: attr(data-hover);
       -webkit-transition: background 0.3s;
       -moz-transition: background 0.3s;
@@ -727,8 +727,6 @@ body.index {
       -ms-transform-origin: 50% 0;
        -o-transform-origin: 50% 0;
           transform-origin: 50% 0; }
-  .link__effect--4 span::before {
-    background-color: #28a2ee; }
   .link__effect--4:hover span, .link__effect--4:focus span {
     -webkit-transform: rotateX(90deg) translateY(-22px);
     -moz-transform: rotateX(90deg) translateY(-22px);
