@@ -83,11 +83,11 @@ a {
   text-decoration: none;
   color: inherit; }
 
-.efeitos {
+.effects {
   cursor: pointer;
   font-weight: 900;
   color: #D0F9B1; }
-  .efeitos:hover {
+  .effects:hover {
     -webkit-transition: 1.2s;
     -o-transition: 1.2s;
     -moz-transition: 1.2s;
@@ -138,7 +138,8 @@ body.images {
   .navbar .navbar__brand {
     padding: 17px;
     letter-spacing: 0.7px;
-    font-size: 22px; }
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif; }
     .navbar .navbar__brand--right {
       float: right; }
       .navbar .navbar__brand--right ul > li {
@@ -179,13 +180,13 @@ body.images {
   font-size: 13px; }
 
 .footer--index {
-  margin-top: 17em; }
+  margin-top: 18em; }
 
 .footer--links {
-  margin-top: 11.5em; }
+  margin-top: 10.9em; }
 
 .footer--buttons {
-  margin-top: 13em; }
+  margin-top: 12.3em; }
 
 body.index {
   background: -webkit-linear-gradient(#8AACFF, #5788ff);
