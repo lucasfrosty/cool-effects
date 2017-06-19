@@ -1659,6 +1659,13 @@ body.index {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.effect__container {
+  margin-top: 4em; }
+
+@media screen and (max-width: 992px) {
+  .effect__container {
+    margin-top: 10em; } }
+
 html, body {
   min-height: 100%; }
 
@@ -1668,7 +1675,7 @@ body {
   padding: 0; }
 
 section {
-  margin-top: 70px; }
+  margin-top: 20px; }
 
 a {
   cursor: pointer; }
