@@ -65,11 +65,11 @@
   span:last-child {
     z-index: 1;
     display: block;
-    padding: 8px 0 0 0;
     color: rgba(0,0,0,0.6);
     text-shadow: none;
     text-transform: none;
     font-style: italic;
+    margin-bottom: -13px;
     font-size: 0.75em;
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     opacity: 0;
@@ -78,6 +78,6 @@
     transition: transform 0.3s, opacity 0.3s;
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
-	transform: translateY(-100%);
+	  transform: translateY(-100%);
   }
 }

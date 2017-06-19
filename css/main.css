@@ -175,9 +175,14 @@ body.images {
 
 .footer {
   width: 100%;
-  margin-top: 16.7em;
   margin-bottom: 15px;
   font-size: 13px; }
+
+.footer--links {
+  margin-top: 11.5em; }
+
+.footer--buttons {
+  margin-top: 13em; }
 
 body.index {
   background: -webkit-linear-gradient(#8AACFF, #5788ff);
@@ -842,11 +847,11 @@ body.index {
   .link__effect--6 span:last-child {
     z-index: 1;
     display: block;
-    padding: 8px 0 0 0;
     color: rgba(0, 0, 0, 0.6);
     text-shadow: none;
     text-transform: none;
     font-style: italic;
+    margin-bottom: -13px;
     font-size: 0.75em;
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     opacity: 0;
