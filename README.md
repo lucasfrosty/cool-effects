@@ -1,4 +1,4 @@
-# pereffects
+# cool-effects
 Site that shows cool css effects.
 
 
